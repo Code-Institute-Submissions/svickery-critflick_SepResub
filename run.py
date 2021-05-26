@@ -15,11 +15,6 @@ def reviews():
     return render_template("reviews.html")
 
 
-@app.route("/current")
-def current():
-    return render_template("current.html")
-
-
 @app.route("/sign_up")
 def sign_up():
     return render_template("sign_up.html")
