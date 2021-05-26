@@ -16,6 +16,11 @@ body    {
     color: white;
 }
 
+h1  {
+    text-align: center;
+    color: white;
+}
+
 .parallax {
 
     /* Set a specific height */
@@ -40,7 +45,8 @@ body    {
 }
 
 .current-carousel   {
-    margin-top: 20px;
+    height: 500px;
+    width: 100%;
 }
 
 /* Place text in the middle of the image */
