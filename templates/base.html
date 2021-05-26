@@ -13,7 +13,7 @@
     <!--Navbar-->
     <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"><i class="fas fa-film"></i>CritFlick</a>
+        <a class="navbar-brand" href="{{ url_for('index') }}"><i class="fas fa-film"></i>CritFlick</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search Movies.." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="search-btn btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
         </nav>

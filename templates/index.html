@@ -6,14 +6,16 @@
     <div class="container-fluid parallax parallax1">
         <div class="hero-text">
             <h1>Welcome to CritFlick</h1>
-            <p>Your New Home For Movie Reviews!</p>
-            <p>Become A Contributor By Clicking Below</p>
-            <button>Join Now!</button>
+                <p>Your New Home For Movie Reviews!</p>
+                <p>Become A Contributor By Clicking Below</p>
+            <form method="get" action="{{ url_for('sign_up') }}">
+                <button class="join-btn btn btn-outline-success" type="submit">Join Now!</button>
+            </form>
         </div>
     </div>
     <br>
 
-    <h1 class="h1-current">Currently Showing!</h1>
+    <h4 class="h1-current">Currently Showing...</h4>
     <br>
 
     <!--Currently Showing Page-->

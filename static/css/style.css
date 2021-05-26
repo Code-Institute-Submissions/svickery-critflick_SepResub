@@ -17,7 +17,7 @@ body    {
 }
 
 .h1-current  {
-    text-align: center;
+    text-align: left;
     color: #f8f8ff;
 }
 
@@ -145,6 +145,7 @@ a {
 
 .sign_up    {
     color: #f9bc50;
+    text-align: center;
 }
 
 b   {
@@ -153,4 +154,9 @@ b   {
 
 .already    {
     color: black;
+}
+
+.search-btn,
+.join-btn {
+    background-color: #f9bc50;
 }
