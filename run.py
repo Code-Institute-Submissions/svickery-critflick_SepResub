@@ -29,6 +29,11 @@ def reviews():
     return render_template("reviews.html")
 
 
+@app.route("/add_review")
+def add_review():
+    return render_template("add_review.html")
+
+
 @app.route("/sign_up", methods=["GET", "POST"])
 def sign_up():
     if request.method == "POST":
@@ -93,7 +98,12 @@ def profile(username):
     return redirect(url_for("login"))
 
 
-
+@app.route("/logout")
+def logout():
+    # remove user from session cookie
+    flash("You have been logged out")
+    session.pop("user")
+    return redirect(url_for("login"))
 
 
 if __name__ == "__main__":
