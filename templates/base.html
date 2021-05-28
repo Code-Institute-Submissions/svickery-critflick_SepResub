@@ -13,7 +13,7 @@
 <body>
     <!--Navbar-->
     <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <a class="navbar-brand" href="{{ url_for('index') }}"><i class="fas fa-film"></i>CritFlick</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@
                         <a class="nav-link" href="{{ url_for('add_review') }}">Add Review</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('logout') }}">Log Out</a>
+                        <a class="nav-link" id="logout" name="logout" href="{{ url_for('logout') }}">Log Out</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
@@ -47,8 +47,8 @@
                     {% endif %}
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search Movies.." aria-label="Search">
-                    <button class="search-btn btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="Search Reviews.." aria-label="Search">
+                    <button class="search-btn btn" type="submit">Search</button>
                 </form>
             </div>
         </nav>
@@ -71,21 +71,21 @@
         {% endblock %}
    
 
-    <footer class="text-center text-white">
+    <footer class="text-center">
         <!-- Grid container -->
         <div class="container-fluid p-4 pb-0">
             <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                <a class="soc-btn btn btn-floating m-1" href="https://www.facebook.com/" target="_blank" role="button"><i
                         class="fab fa-facebook-f"></i></a>
 
                 <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                <a class="soc-btn btn btn-floating m-1" href="https://twitter.com/" target="_blank" role="button"><i
                         class="fab fa-twitter"></i></a>
 
                 <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                <a class="soc-btn btn btn-floating m-1" href="https://www.instagram.com/" target="_blank" role="button"><i
                         class="fab fa-instagram"></i></a>
 
             </section>
@@ -98,7 +98,7 @@
             <div class="row">
         <div class="copyright text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2021 Copyright:
-            <a class="text-white" href="#">SVickery Designs</a>
+            <a>SVickery Designs</a>
         </div>
             </div>
         </div>
