@@ -19,3 +19,14 @@ window.onclick = function () {
 /**************************** Allows Text-Area box for review to resize if a big review ***********************************/
 
 $('textarea').autoResize();
+
+$(function(){
+
+    $('#show').on('click',function(){        
+        $('.card-reveal').slideToggle('slow');
+    });
+    
+    $('.card-reveal .close').on('click',function(){
+        $('.card-reveal').slideToggle('slow');
+    });
+});
