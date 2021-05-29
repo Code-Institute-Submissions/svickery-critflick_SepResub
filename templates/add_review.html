@@ -2,7 +2,7 @@
 {% block content %}
 <!--Add Review Form-->
 <div class="row">
-    <form action="{{ url_for('sign_up') }}" method="POST">
+    <form action="{{ url_for('add_review') }}" method="POST">
         <div class="container col-sm-12">
             <h1 class="form-style">Add Review</h1>
             <p class="form-style">Fill in the form below to add your latest review</p>
@@ -15,7 +15,7 @@
             </div>
 
             <div class="input-field col-sm-12 col-md-6">
-                <input type="text" placeholder="Year.." name="title" id="title" 
+                <input type="text" placeholder="Year.." name="year" id="year" 
                 minlength="1" required>
             </div>
         </div>

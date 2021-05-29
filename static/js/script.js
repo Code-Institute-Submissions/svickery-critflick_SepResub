@@ -9,16 +9,14 @@ $('#password, #password-repeat').on('keyup', function () {
 
 /**************************** Function to close dropdown menu after selecting section ***********************************/
 
-window.onclick = function () {
+/*window.onclick = function () {
     let dropDown = document.getElementById("navbarNavDropdown");
     if (dropDown.classList.contains("show")) {
         dropDown.classList.remove("show");
     }
-};
+};*/
 
 /**************************** Allows Text-Area box for review to resize if a big review ***********************************/
-
-$('textarea').autoResize();
 
 $(function(){
 

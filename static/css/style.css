@@ -15,6 +15,17 @@ body    {
     background-repeat: no-repeat;
 }
 
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+
+
 .navbar {
     background-color: #333333;
     width: 100%

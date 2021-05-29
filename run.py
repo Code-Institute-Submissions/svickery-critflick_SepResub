@@ -26,12 +26,9 @@ def index():
 
 @app.route("/reviews")
 def reviews():
-    return render_template("reviews.html")
 
-
-@app.route("/add_review")
-def add_review():
-    return render_template("add_review.html")
+    reviews = mongo.db.reviews.find()
+    return render_template("reviews.html", reviews=reviews)
 
 
 @app.route("/terms")
@@ -109,6 +106,31 @@ def logout():
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
+
+
+@app.route("/add_review", methods=["GET", "POST"])
+def add_review():
+    
+    if request.method == "POST":
+        movie_review = {
+            "title": request.form.get("title"),
+            "year": request.form.get("year"),
+            "language": request.form.get("language"),
+            "genre": request.form.get("genre"),
+            "director": request.form.get("director"),
+            "actors": request.form.get("actors"),
+            "rating": request.form.get("rating"),
+            "run_time": request.form.get("run_time"),
+            "image": request.form.get("image"),
+            "review": request.form.get("review"),
+            "created_by": session["user"]
+        }
+
+        mongo.db.reviews.insert_one(movie_review)
+        flash("Movie Review Added!")
+        return redirect(url_for("reviews"))
+
+    return render_template("add_review.html")
 
 
 if __name__ == "__main__":
