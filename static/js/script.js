@@ -7,13 +7,6 @@ $('#password, #password-repeat').on('keyup', function () {
         $('#message').html('Not Matching').css('color', 'red');
 });
 
-/**************************** Function for fixed header scrolling of Parallax ***********************************/
-
-$(window).scroll(function () {
-    var scrolledY = $(window).scrollTop();
-    $("#container").css("background-position", "left " + scrolledY + "px");
-});
-
 /**************************** Function to close dropdown menu after selecting section ***********************************/
 
 window.onclick = function () {
@@ -22,3 +15,7 @@ window.onclick = function () {
         dropDown.classList.remove("show");
     }
 };
+
+/**************************** Allows Text-Area box for review to resize if a big review ***********************************/
+
+$('textarea').autoResize();
