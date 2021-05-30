@@ -11,6 +11,15 @@
     </div>
     <br>
 
+        <div class="container">
+            <form class="form-style" action="{{ url_for('search') }}" method="POST">
+                <input class="form-control me-2" type="text" minlength="3" placeholder="Search For Reviews.."
+                    aria-label="Search" id="query" name="query">
+                <button class="search-btn btn form-style" type="submit"><a href="{{ url_for('reviews') }}">Search</a></button>
+                <button class="reset-btn btn form-style" type="text"><a href="{{ url_for('reviews') }}">Reset</a></button>
+            </form>
+            <br>
+        </div>
     <!--Reviews Section-->
     {% for movie_review in reviews %}
     <div class="container">

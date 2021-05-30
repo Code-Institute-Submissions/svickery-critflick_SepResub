@@ -36,6 +36,17 @@ def terms():
     return render_template("terms.html")
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    """
+        Search reviews by the title and country name
+    """
+    query = request.form.get("query")
+    reviews = list(mongo.db.reviews.find({"$text": {"$search": query}}))
+    return render_template("reviews.html", reviews=reviews)
+
+
+
 @app.route("/sign_up", methods=["GET", "POST"])
 def sign_up():
     if request.method == "POST":

@@ -16,17 +16,6 @@ body    {
     padding-top: 40px;
 }
 
-.flexbox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    padding-bottom: 50px;
-    padding-top: 25px;
-}
-
-
 .navbar {
     background-color: #333333;
     width: 100%
@@ -95,35 +84,11 @@ nav li a:hover {
     font-size: 25px;
 }
 
-.hero-text button,
-.review-btn,
-.search-btn,
-.cancelbtn,
-.edit-btn,
-.delete-btn {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    color: black;
-    background-color: #f9bc50;
-    text-align: center;
-    cursor: pointer;
-}
 
-.hero-text button:hover {
-    background-color: #f9bc50;
-    color: black;
-}
 
 .container-fluid  {
     background-color: #333333;
 }
-
-.copyright  {
-    background-color: black;
-}
-
-* {box-sizing: border-box}
 
 /* Add padding to containers */
 .container {
@@ -153,7 +118,28 @@ hr {
     margin-bottom: 25px;
 }
 
-/* Set a style for the submit/register button */
+/* Set a style for the all buttons */
+
+.hero-text button,
+.review-btn,
+.search-btn,
+.cancel-btn,
+.edit-btn,
+.delete-btn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    color: black;
+    background-color: #f9bc50;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #f9bc50;
+    color: black;
+}
+
 .registerbtn,
 .cancelbtn   {
     background-color: #f9bc50;
@@ -170,13 +156,14 @@ hr {
     opacity: 1;
 }
 
-.cancelbtn  {
+.cancel-btn,
+.reset-btn  {
     background-color: red;
 }
 
 /* Add a white text color to links */
 a   {
-    color: #f8f8ff;
+    color: black;
 }
 
 /* Set a grey background color and center the text of the "sign in" section */
@@ -198,12 +185,12 @@ b   {
     color: black;
 }
 
-.search-btn,
+/*.search-btn,
 .join-btn,
 .review-btn,
 .edit-btn  {
     background-color: #f9bc50;
-}
+}*/
 
 .edit  {
     background-color: #f8f8ff;
@@ -215,6 +202,11 @@ b   {
     cursor: pointer;
 }
 
+/*Footer styling*/
+
+.copyright  {
+    background-color: black;
+}
 
 i   {
     color: #f9bc50;
@@ -233,6 +225,8 @@ h4  {
 .flashes    {
     padding-top: 40px;
 }
+
+/*Review Card styling*/
 
 textarea[type="text"]   {
     width: 100%;
