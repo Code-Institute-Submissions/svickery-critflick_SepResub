@@ -99,7 +99,8 @@ nav li a:hover {
 .review-btn,
 .search-btn,
 .cancelbtn,
-.edit-btn {
+.edit-btn,
+.delete-btn {
     border: none;
     outline: 0;
     display: inline-block;

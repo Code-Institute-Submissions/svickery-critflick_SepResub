@@ -45,6 +45,11 @@
                 <button class="edit-btn btn" type="submit">Edit Review</button>
             </form>
         </div>
+        <div class="delete-btn">
+            <form method="get" action="{{ url_for('delete_review', movie_review_id=movie_review._id) }}">
+                <button class="delete-btn btn" type="submit">Delete Review</button>
+            </form>
+        </div>
         <br>
         {% endif %}
 
