@@ -32,6 +32,9 @@
                     <p>Run Time: {{ movie_review.run_time }}</p>
                     </div>
                     </div>
+                     <form method="get" action="{{ url_for('edit_review', movie_review_id=movie_review._id) }}">
+                        <button class="edit-btn btn" type="submit">Edit Review</button>
+                    </form>
                     <h5>Review:</h5>
                     <div class="scroll-box scroll-box-prof">
                     <p>{{ movie_review.review}}</p>
