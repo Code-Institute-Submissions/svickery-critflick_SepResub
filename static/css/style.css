@@ -97,7 +97,9 @@ nav li a:hover {
 
 .hero-text button,
 .review-btn,
-.search-btn {
+.search-btn,
+.cancelbtn,
+.edit-btn {
     border: none;
     outline: 0;
     display: inline-block;
@@ -151,7 +153,8 @@ hr {
 }
 
 /* Set a style for the submit/register button */
-.registerbtn    {
+.registerbtn,
+.cancelbtn   {
     background-color: #f9bc50;
     color: black;
     padding: 16px 20px;
@@ -166,8 +169,12 @@ hr {
     opacity: 1;
 }
 
+.cancelbtn  {
+    background-color: red;
+}
+
 /* Add a white text color to links */
-a {
+a   {
     color: #f8f8ff;
 }
 
@@ -192,12 +199,12 @@ b   {
 
 .search-btn,
 .join-btn,
-.review-btn {
+.review-btn,
+.edit-btn  {
     background-color: #f9bc50;
 }
 
-.edit, 
-.edit-btn   {
+.edit  {
     background-color: #f8f8ff;
     border: none;
     outline: 0;
@@ -216,8 +223,14 @@ i   {
     color: #f9bc50;
 } 
 
-.row-flashes    {
+/*Change color of flashes messages*/
+
+h4  {
     color: #f9bc50;
+}
+
+.flashes    {
+    padding-top: 40px;
 }
 
 textarea[type="text"]   {
