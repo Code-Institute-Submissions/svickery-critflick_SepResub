@@ -36,6 +36,11 @@ def terms():
     return render_template("terms.html")
 
 
+@app.route("/edit_review")
+def edit_review():
+    return render_template("edit_review.html")
+
+
 @app.route("/sign_up", methods=["GET", "POST"])
 def sign_up():
     if request.method == "POST":
