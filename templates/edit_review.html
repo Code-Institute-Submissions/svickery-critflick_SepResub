@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block content %}
+<!--Add Review Form-->
+<div class="row">
+    <form action="{{ url_for('add_review') }}" method="POST">
+        <div class="container col-sm-12">
+            <h1 class="form-style">Add Review</h1>
+            <p class="form-style">Fill in the form below to add your latest review</p>
+            <hr>
+
+        <div class="row">
+            <div class="input-field col-sm-12 col-md-6">
+                <input type="text" placeholder="Title.." name="title" id="title" 
+                minlength="1" required>
+            </div>
+
+            <div class="input-field col-sm-12 col-md-6">
+                <input type="text" placeholder="Year.." name="year" id="year" 
+                minlength="1" required>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="input-field col-sm-12 col-md-6">
+                
+                <input type="text" placeholder="Language.." name="language" id="language" 
+                minlength="1" required>
+            </div>
+
+            <div class="input-field col-sm-12 col-md-6">
+                
+                <input type="text" placeholder="Genre.." name="genre" id="genre" 
+                minlength="1" required>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="input-field col-sm-12 col-md-6">
+                
+                <input type="text" placeholder="Director.." name="director" id="director" 
+                minlength="1" required>
+            </div>
+
+            <div class="input-field col-sm-12 col-md-6">
+                
+                <input type="text" placeholder="Actors.." name="actors" id="actors" 
+                minlength="1" required>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="input-field col-sm-12 col-md-6">
+                
+                <input type="text" placeholder="Rating.." name="rating" id="rating" 
+                minlength="1" required>
+            </div>
+
+            <div class="input-field col-sm-12 col-md-6">
+                
+                <input type="text" placeholder="In mins.." name="run_time" id="run_time" 
+                minlength="1" required>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="input-field col-sm-12">
+                <label for="image"><b>Please add a valid link to an image for the movie</b></label>
+                <input type="text" placeholder="Url Link.." name="image" id="image" 
+                minlength="1" minlength="5" maxlength="150" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\%$&'\(\)\*\+,;=.]+$" required>
+            </div>
+        </div>
+        <hr>
+         <div class="row review-text">
+            <div class="textarea col-sm-12">
+                <label for="review"><b>Please write your review below</b></label>
+                <textarea class="review-text" type="text"  name="review" id="review" 
+                minlength="1" rows="6" cols="121" placeholder="Write review here.." required></textarea>
+            </div>
+        </div>
+        <hr>
+            <button type="submit" class="registerbtn">Submit Review</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

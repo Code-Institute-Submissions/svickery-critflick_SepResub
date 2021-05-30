@@ -12,40 +12,33 @@
     <br>
 
     <!--Reviews Section-->
-    <div class="flexbox">
-        {% for  movie_review in reviews %}
-            <div class="contatiner-fluid">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="img-responsive" src="{{  movie_review.image }}" alt="image" id="image" name="image">
-    
-                    </div><!-- card image -->
-    
-                    <div class="card-content">
-                        <span class="card-title">Review for: {{  movie_review.title }} </span>
-                        <button type="button" id="show" class="btn btn-custom pull-right" aria-label="Left Align">
-                            <i class="card-fa fa fa-ellipsis-v"></i>
-                        </button>
+    {% for  movie_review in reviews %}
+    <div class="container">
+        <div class="card">
+            <img class="card-img-top" src="{{ movie_review.image }}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ movie_review.title }} Review</h5>
+                <p class="card-text">
+                    <div class="row">
+                    <div class="info-text col-sm-6">
+                    <p>Director: {{ movie_review.director }}</p> 
+                    <p>Actors: {{ movie_review.actors }}</p>
+                    <p>Rating: {{ movie_review.rating }}</p>
                     </div>
-    
-    
-                    <!-- card actions -->
-                    <div class="card-reveal">
-                        <span class="card-title">{{ movie_review.title }}, {{  movie_review.rating }}</span>
-                        <p>Movie Title: {{  movie_review.title }}</p>
-                        <p>Year of Release: {{  movie_review.year }}</p>
-                        <p>Spoken Language: {{  movie_review.language }}</p>
-                        <p>Director: {{  movie_review.director }}</p>
-                        <p>Actors: {{  movie_review.actors }}</p>
-                        <p>Rating: {{  movie_review.rating }}</p>
-                        <p>Run Time: {{  movie_review.run_time }}</p>
-                        <p>Review: {{ movie_review.review}}</p>
-                        <p>Review By: {{  movie_review.created_by }}</p>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true">×</span></button>
-                    </div><!-- card reveal -->
-                </div>
-        
+                    <div class="info-text col-sm-6">
+                    <p>Year of Release: {{ movie_review.year }}</p> 
+                    <p>Language: {{ movie_review.language }}</p>
+                    <p>Run Time: {{ movie_review.run_time }}</p>
+                    </div>
+                    </div>
+                    <h5>Review:</h5>
+                    <div class="scroll-box">
+                    <p>{{ movie_review.review}}</p>
+                    <p class="card-text"><small class="text-muted">Review By: {{ movie_review.created_by }}</small></p>
+                    </div>
+            </div>
+        </div>
+    </div>
     {% endfor %}
-</div>
+
 {% endblock %}
