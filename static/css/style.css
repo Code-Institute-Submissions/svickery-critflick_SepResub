@@ -13,6 +13,7 @@ body    {
     font-family: "Montserrat", sans-serif;
     background-color: #333333;
     background-repeat: no-repeat;
+    padding-top: 40px;
 }
 
 .flexbox {
@@ -94,7 +95,9 @@ nav li a:hover {
     font-size: 25px;
 }
 
-.hero-text button {
+.hero-text button,
+.review-btn,
+.search-btn {
     border: none;
     outline: 0;
     display: inline-block;
@@ -148,7 +151,7 @@ hr {
 }
 
 /* Set a style for the submit/register button */
-.registerbtn {
+.registerbtn    {
     background-color: #f9bc50;
     color: black;
     padding: 16px 20px;
@@ -163,9 +166,9 @@ hr {
     opacity: 1;
 }
 
-/* Add a blue text color to links */
+/* Add a white text color to links */
 a {
-    color: dodgerblue;
+    color: #f8f8ff;
 }
 
 /* Set a grey background color and center the text of the "sign in" section */
@@ -188,9 +191,22 @@ b   {
 }
 
 .search-btn,
-.join-btn {
+.join-btn,
+.review-btn {
     background-color: #f9bc50;
 }
+
+.edit, 
+.edit-btn   {
+    background-color: #f8f8ff;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
 
 i   {
     color: #f9bc50;

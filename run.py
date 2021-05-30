@@ -36,11 +36,6 @@ def terms():
     return render_template("terms.html")
 
 
-@app.route("/edit_review")
-def edit_review():
-    return render_template("edit_review.html")
-
-
 @app.route("/sign_up", methods=["GET", "POST"])
 def sign_up():
     if request.method == "POST":
@@ -95,12 +90,17 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    """
+        render user profile from db
+    """
+    reviews = mongo.db.reviews.find()
+
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
+        return render_template("profile.html", username=username, reviews=reviews)
 
     return redirect(url_for("login"))
 
@@ -136,6 +136,13 @@ def add_review():
         return redirect(url_for("reviews"))
 
     return render_template("add_review.html")
+
+
+@app.route("/edit_review/<movie_review_id>", methods=["GET", "POST"])
+def edit_review(movie_review_id):
+    review = mongo.db.reviews.find_one({"_id": ObjectId()})    
+
+    return render_template("edit_review.html", movie_review=movie_review)
 
 
 if __name__ == "__main__":
