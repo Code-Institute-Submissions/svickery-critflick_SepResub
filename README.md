@@ -132,7 +132,7 @@ In the footer is copyright information and links to the social media sites.
 * [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Used for grid layouts and cards on my page. Also allowed me to use Font Awesome icons for my social media links. 
 * [Font Awesome](https://fontawesome.com/) - Used for social link icons in conjuction with bootstrap. 
 * [Google Fonts](https://fonts.google.com/) - Used for entire website fonts.
-* [Stack Overflow](https://stackoverflow.com/) - Used for the JavaScript necessary to get my stick navigation bar to work. 
+* [Stack Overflow](https://stackoverflow.com/) - Used for styling forms etc from bootstrap. 
 * [Web Formatter](https://webformatter.com/) - Used to make my code cleaner and easier to read.
 * [W3Schools](https://www.w3schools.com/) - Used to help with contact form and other various coding questions.
 * [JSfiddle](http://jsfiddle.net/QN9cH/1/) - This was to help with parallax scrolling effect on iOS mobile devices. 
@@ -149,29 +149,23 @@ To test the website, the project code was run through both a Markup checker, a C
 
 [Markup Validator](https://validator.w3.org/#validate_by_input) 
 
-![alt text](https://github.com/svickery/EnjoyBristol/blob/0615e651905015a80874b49bb45a6d6527edafd5/assets/img/HTMLValidator2.jpg "HTML Validator")
+![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/HTML-Validator.jpg "HTML Validator")
 
-![alt text](https://github.com/svickery/EnjoyBristol/blob/0615e651905015a80874b49bb45a6d6527edafd5/assets/img/HTMLValidator.jpg)
+The errors that have shown up are ones that can't be avoided. The errors are either in the head or the scripts section. The validator doesn't recognise jquery correctly and the head data is from VS Code's own template. 
 
-![alt text](https://github.com/svickery/EnjoyBristol/blob/0615e651905015a80874b49bb45a6d6527edafd5/assets/img/HTMLValidator2.jpg)
+[CSS Validator](https://jigsaw.w3.org/css-validator/ "CSS Validator") 
 
-The errors that have shown up are ones that can't be avoided. The 'type=' issue regarding the use of the word JavaScript is not correct. If it is removed in the html, it does not work. The <ul> issue is due to the html validator not recognising bootstrap. The issue with '--' used for the comments is irrelevant. 
+![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/CSS-Validator.jpg "CSS Validator")
 
-[CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
-
-![alt text](https://github.com/svickery/EnjoyBristol/blob/0615e651905015a80874b49bb45a6d6527edafd5/assets/img/CSSValidator.jpg "CSS Validator")
-
-There are no errors in the CSS Validator.
+The errors shown here are from a getbootstrap styling I used which the validator does not recognise.
 
 [JavaScript Validator](https://jslint.com/)
 
 ![alt text](https://github.com/svickery/EnjoyBristol/blob/0615e651905015a80874b49bb45a6d6527edafd5/assets/img/JSMaps1.jpg "JavaScript Validator")
 
-![alt text](https://github.com/svickery/EnjoyBristol/blob/0615e651905015a80874b49bb45a6d6527edafd5/assets/img/JSEmail.jpg)
+![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/JSLint.jpg)
 
-![alt text](https://github.com/svickery/EnjoyBristol/blob/0615e651905015a80874b49bb45a6d6527edafd5/assets/img/JSScript.jpg)
-
-The JS validator shows up some issues with certain characters being used, such as the use of '$' and other "undeclared" items in the code. However this would make the code unusable. There is also an issue with there being too many characters in some sections, but this is unavoidable due to the descriptions needed in the info windows. LET has been taught to us as being acceptable as VAR, but this will be rectified.
+The JS validator shows up some issues with certain characters being used, such as the use of '$' and to use double quotes. However this would make the code unusable. Validator doesn't seem to recognise jquery.
 
 #### Testing User Stories
 
