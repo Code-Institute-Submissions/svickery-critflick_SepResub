@@ -5,7 +5,7 @@
 
 [View in Heroku](https://critflick.herokuapp.com)
 
-![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/testing/critflick.jpg "Website Screenshot")
+![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/critflick.jpg "Website Screenshot")
 
 A website designed for movie fans around the world to post their own reviews of movies. It's purpose is to be an alternative to the status quo of movie reviewers working in the industry today. While most professional reviewers are looking for the most "worthy" of movies, CritFlick aims to give the opinion back to the people. 
 
@@ -154,9 +154,9 @@ In the footer is copyright information and links to the social media sites.
 
 As you can see in the below pictures, I had two clusters from movie_datbase, called reviews and users. Reviews is purely for the information given by a contributer to the site for their review. Users data is their login name and password (not visible).
 
-![alt text](https://github.com/svickery/critflick/blob/6d7dcbb766897888780d55e9fe589bc3e5ce8680/testing/dbreviews.jpg)
+![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/dbreviews.jpg)
 
-![alt text](https://github.com/svickery/critflick/blob/6d7dcbb766897888780d55e9fe589bc3e5ce8680/testing/dbusers.jpg)
+![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/dbusers.jpg)
 
 ## Testing
 
@@ -164,7 +164,7 @@ To test the website, the project code was run through both a Markup checker, a C
 
 [Markup Validator](https://validator.w3.org/#validate_by_input) 
 
-![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/testing/html-validator.jpg "HTML Validator")
+![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/html-validator.jpg "HTML Validator")
 
 The errors that have shown up are ones that can't be avoided. The errors are either in the head or the scripts section. The validator doesn't recognise jquery correctly and the head data is from VS Code's own template. 
 
@@ -176,7 +176,7 @@ The errors shown here are from a getbootstrap styling I used which the validator
 
 [JavaScript Validator](https://jslint.com/)
 
-![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/testing/jslint.jpg)
+![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/jslint.jpg)
 
 The JS validator shows up some issues with certain characters being used, such as the use of '$' and to use double quotes. However this would make the code unusable. Validator doesn't seem to recognise jquery.
 
@@ -201,7 +201,7 @@ The JS validator shows up some issues with certain characters being used, such a
      b. Font is clear and professional, easy to read and large where necessary.
      c. All functions are explained to the user, such as buttons and clickable pictures in Shopping section.
      
-![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/testing/home.jpg)
+![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/home.jpg)
     
  * ##### User Goals
  
@@ -210,22 +210,22 @@ The JS validator shows up some issues with certain characters being used, such a
      a. Navigation immediately shows Reviews page as an option. 
      b. All reviews areas are titled. 
      
- ![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/reviews.jpg)
+ ![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/reviews.jpg)
     
    ii. *As a user I want to be able to contribute my own articles to the website*
     
      a. Add Review is in Navbar and Profile page once a user.
      b. Add Review form is self explanatory and easy to use.
      
-![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/addreview.jpg)
+![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/addreview.jpg)
      
    iii. *As a user I want to be able to be able to create, edit and delete an article of my choosing*
      
      a. Profile page has all these functions.
      
-![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/profile.jpg)
+![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/profile.jpg)
 
-![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/profileone.jpg)
+![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/profileone.jpg)
      
    iv. *As a user I want to be able to log in and out as and when*
     
@@ -236,7 +236,7 @@ The JS validator shows up some issues with certain characters being used, such a
    
      a. Search bar clearly displayed on reviews page immediately after logging in. 
 
-![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/search.jpg)
+![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/search.jpg)
 
  * #### Potential User Goals
 
