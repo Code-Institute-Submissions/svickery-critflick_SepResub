@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <!--Add Review Form-->
+
 <div class="container-fluid">
     <div class="row">
         <form action="{{ url_for('add_review') }}" method="POST">
@@ -75,6 +76,9 @@
                     </div>
                 </div>
                 <hr>
+
+                <!-- Add Review Button -->
+
                 <button type="submit" class="register-btn">Submit Review</button>
             </div>
         </form>

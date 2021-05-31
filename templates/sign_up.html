@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <!--Sign Up From added from W3 Schools-->
+
 <div class="container-fluid">
     <div class="row">
         <form action="{{ url_for('sign_up') }}" method="POST">
@@ -23,13 +24,13 @@
                     minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" required>
                 <hr>
 
+                <!-- Sign Up Buttons -->
+
                 <p class="form-style">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
 
                 <button type="submit" class="register-btn">Register</button>
                 <br>
-
-
 
                 <p class="already-btn">Already have an account? <a href="{{ url_for('login') }}">Log In Here</a>.</p>
             </div>

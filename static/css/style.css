@@ -17,6 +17,8 @@ body    {
     overflow-x: hidden;
 }
 
+/* Navbar styling */
+
 .navbar {
     background-color: #333333 !important;
     width: 100%
@@ -34,6 +36,8 @@ body    {
 nav ul a {
     color: #f9bc50 !important;
 }
+
+/* Index page styling */
 
 h4  {
     text-align: center;
@@ -71,6 +75,7 @@ h4  {
 }
 
 /* Place text in the middle of parallax images */
+
 .hero-text {
     text-align: center;
     position: absolute;
@@ -90,7 +95,8 @@ h4  {
 }
 
 /* Add padding to containers */
-.container {
+
+/*.container {
     padding: 16px;
 }
 
@@ -192,15 +198,12 @@ b   {
 
 .copyright  {
     background-color: black;
+    color: #f9bc50;
 }
 
 i   {
     color: #f9bc50;
 }
-
-.copyright    {
-    color: #f9bc50;
-} 
 
 /*Change color of flashes messages*/
 
@@ -267,7 +270,13 @@ textarea[type=text]:focus  {
     .card-img-top   {
        min-height: 800px;
     }
+
+    .footer {
+        position: fixed;
+    }
 }
+
+/* Medium devices  */
 
 @media (max-width: 991px) and  (min-width:768px)    {
     .parallax   {
@@ -288,6 +297,7 @@ textarea[type=text]:focus  {
 }
 
 /* Extra small devices */
+
 @media (max-width: 575px) {
     .parallax   {
         min-height: 650px;

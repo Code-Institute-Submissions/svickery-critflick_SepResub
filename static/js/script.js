@@ -7,24 +7,4 @@ $('#password, #password-repeat').on('keyup', function () {
         $('#message').html('Not Matching').css('color', 'red');
 });
 
-/**************************** Function to close dropdown menu after selecting section ***********************************/
 
-/*window.onclick = function () {
-    let dropDown = document.getElementById("navbarNavDropdown");
-    if (dropDown.classList.contains("show")) {
-        dropDown.classList.remove("show");
-    }
-};*/
-
-/**************************** Allows Text-Area box for review to resize if a big review ***********************************/
-
-$(function(){
-
-    $('#show').on('click',function(){        
-        $('.card-reveal').slideToggle('slow');
-    });
-    
-    $('.card-reveal .close').on('click',function(){
-        $('.card-reveal').slideToggle('slow');
-    });
-});
