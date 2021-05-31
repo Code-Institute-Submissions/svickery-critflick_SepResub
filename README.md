@@ -149,6 +149,15 @@ In the footer is copyright information and links to the social media sites.
 * [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Templating language used with Python and Flask.
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/) - Web framework used with Python.
 * [Heroku](https://id.heroku.com/login) - Cloud based app for deploying websites.
+
+## Database Schema
+
+As you can see in the below pictures, I had two clusters from movie_datbase, called reviews and users. Reviews is purely for the information given by a contributer to the site for their review. Users data is their login name and password (not visible).
+
+![alt text](https://github.com/svickery/critflick/blob/6d7dcbb766897888780d55e9fe589bc3e5ce8680/testing/dbreviews.jpg)
+
+![alt text](https://github.com/svickery/critflick/blob/6d7dcbb766897888780d55e9fe589bc3e5ce8680/testing/dbusers.jpg)
+
 ## Testing
 
 To test the website, the project code was run through both a Markup checker, a CSS checker and a JavaScript checker, below are the screenshots of the results and explanations. 
