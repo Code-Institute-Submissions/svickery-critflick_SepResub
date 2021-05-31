@@ -1,9 +1,11 @@
 # CritFlick
 ## Movie Review Website
 
-[View website in Github pages!](https://github.com/svickery/EnjoyBristol)
+[View website in Github pages!](https://github.com/svickery/critflick)
 
-![alt text](https://github.com/svickery/critflick/blob/e014de16be8e0f616a11d8eb6ed30386833033a6/readme/CritFlick.jpg "Website Screenshot")
+[View in Heroku](https://critflick.herokuapp.com)
+
+![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/testing/critflick.jpg "Website Screenshot")
 
 A website designed for movie fans around the world to post their own reviews of movies. It's purpose is to be an alternative to the status quo of movie reviewers working in the industry today. While most professional reviewers are looking for the most "worthy" of movies, CritFlick aims to give the opinion back to the people. 
 
@@ -75,6 +77,8 @@ As a site owner, I want to:
 
 [View Wireframes Here](https://www.figma.com/file/TLfVJCGUaDK7M33SHrGGYG/CritFlick?node-id=0%3A1)
 
+The site changed a lot from its original conception. Time constraints didn't allow me to use a Movie API to show current cinema listings and the color scheme was changed to a darker effect to replicate the cinema feel. I had to change a lot of cards etc to make the site work correctly. 
+
 ## Features
 
 The website has a scrolling effect on the index page and reviews page using a parallax effect. This is so the website not only looks good but also be navigated easily. There are seperate pages for different needs such as sign up form, log in form and add review form once a member. The navigation bar has been fixed at the top so that all pages are available during use of the site. In total there are nine pages available to use. However if you are not a member there are only four pages to view. On the reviews page there is a search bar to search for whichever movie they would like to see a review of. There is a footer with social media links at the bottom of each page. This footer also contatins copyright information.  
@@ -130,16 +134,14 @@ In the footer is copyright information and links to the social media sites.
 * The project uses HTML, CSS and JavaScript languages. 
 * [Github](https://github.com/) - I used this for all coding (IDE) while building the website.
 * [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Used for grid layouts and cards on my page. Also allowed me to use Font Awesome icons for my social media links. 
-* [Font Awesome](https://fontawesome.com/) - Used for social link icons in conjuction with bootstrap. 
+* [Font Awesome](https://fontawesome.com/) - Used for icons in conjuction with bootstrap. 
 * [Google Fonts](https://fonts.google.com/) - Used for entire website fonts.
 * [Stack Overflow](https://stackoverflow.com/) - Used for styling forms etc from bootstrap. 
 * [Web Formatter](https://webformatter.com/) - Used to make my code cleaner and easier to read.
-* [W3Schools](https://www.w3schools.com/) - Used to help with contact form and other various coding questions.
-* [JSfiddle](http://jsfiddle.net/QN9cH/1/) - This was to help with parallax scrolling effect on iOS mobile devices. 
+* [W3Schools](https://www.w3schools.com/) - Used to help with various coding questions.
 * [Autoprefixer](https://autoprefixer.github.io/) - Used to ensure CSS is correct
 * [JQuery](https://jquery.com/) - Used for JQuery elements applied in JavaScript and some help with writing code.
-* [EmailJS](https://www.emailjs.com/) - JavaScript code given to make Contact Form functional.
-* [Trip Advisor](https://www.tripadvisor.co.uk/) - Used for the attraction locations.
+* [Rotten Tomatoes](https://www.rottentomatoes.com/) - Used to have reviews added to site.
 * [W3 Validator](https://validator.w3.org/#validate_by_input) - Used to ensure HTML is correct.
 * [JS Lint](https://jslint.com/) - Used to ensure JavaScript is correct.
 
@@ -149,21 +151,19 @@ To test the website, the project code was run through both a Markup checker, a C
 
 [Markup Validator](https://validator.w3.org/#validate_by_input) 
 
-![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/HTML-Validator.jpg "HTML Validator")
+![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/testing/html-validator.jpg "HTML Validator")
 
 The errors that have shown up are ones that can't be avoided. The errors are either in the head or the scripts section. The validator doesn't recognise jquery correctly and the head data is from VS Code's own template. 
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/ "CSS Validator") 
 
-![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/CSS-Validator.jpg "CSS Validator")
+![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/testing/css-validator.jpg "CSS Validator")
 
 The errors shown here are from a getbootstrap styling I used which the validator does not recognise.
 
 [JavaScript Validator](https://jslint.com/)
 
-![alt text](https://github.com/svickery/EnjoyBristol/blob/0615e651905015a80874b49bb45a6d6527edafd5/assets/img/JSMaps1.jpg "JavaScript Validator")
-
-![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/JSLint.jpg)
+![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/testing/jslint.jpg)
 
 The JS validator shows up some issues with certain characters being used, such as the use of '$' and to use double quotes. However this would make the code unusable. Validator doesn't seem to recognise jquery.
 
@@ -180,67 +180,83 @@ The JS validator shows up some issues with certain characters being used, such a
     
      a. As soon as the website is clicked there is a navigation bar at the top of the page.
      b. Scrolling down the page, navigation is still easy as the navigation bar stays at the top of the page.
-     c. The site uses a parallax effect and therefore navigation is always smooth. There is no need to keep going back and forth through pages, all information is       on one scrolling page. 
+     c. The site uses a parallax effect and fixed navbar therefore navigation is always smooth. There is no need to keep going back and forth through pages, all         information is on one scrolling page. 
     
     iii. *As a new visitor I want it so content is easily read and information must be displayed correctly*
    
      a. As site loads, colour scheme is modern and clean.  
      b. Font is clear and professional, easy to read and large where necessary.
      c. All functions are explained to the user, such as buttons and clickable pictures in Shopping section.
-     d. Info windows are available for all attractions and easily read.
      
-![alt text](https://github.com/svickery/EnjoyBristol/blob/29cc20202659d10436a93b87da1c9c53010d2a59/assets/img/about.jpg)
+![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/testing/home.jpg)
     
- * ##### Potential User Goals
+ * ##### User Goals
  
-    i. *As a potential user I want to see where local shopping areas are available and in my locality*
+    i. *As a user I want to be able to view movie reviews and navigate there easily*
     
-     a. Navigation immediately shows Shopping section as an option. 
-     b. All shopping areas are labelled. 
-     c. There is a variety of shopping areas to suit where the user is staying in the city.
+     a. Navigation immediately shows Reviews page as an option. 
+     b. All reviews areas are titled. 
      
- ![alt text](https://github.com/svickery/EnjoyBristol/blob/29cc20202659d10436a93b87da1c9c53010d2a59/assets/img/shopping.jpg)
+ ![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/reviews.jpg)
     
-   ii. *As a potential user I want to be able to contact the website for further information on any questions I have to ask*
+   ii. *As a user I want to be able to contribute my own articles to the website*
     
-     a. Navigation bar shows Contact Us section.
-     b. Contact Us form is self explanatory and easy to use.
+     a. Add Review is in Navbar and Profile page once a user.
+     b. Add Review form is self explanatory and easy to use.
      
-![alt text](https://github.com/svickery/EnjoyBristol/blob/29cc20202659d10436a93b87da1c9c53010d2a59/assets/img/contact.jpg)
+![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/addreview.jpg)
      
-   iii. *As a potential user I want to know the opening hours of businesses*
+   iii. *As a user I want to be able to be able to create, edit and delete an article of my choosing*
      
-     a. Opening hours are on each info window of the map markers.
+     a. Profile page has all these functions.
      
-![alt text](https://github.com/svickery/EnjoyBristol/blob/29cc20202659d10436a93b87da1c9c53010d2a59/assets/img/attractions.jpg)
+![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/profile.jpg)
+
+![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/profileone.jpg)
      
-   iv. *As a potential user I want to find social media links*
+   iv. *As a user I want to be able to log in and out as and when*
     
-     a. Social media links are displayed in the footer.
-     b. Icons are used for each social media link so that the user can recognise easily. 
+     a. Log in clearly displayed in navigation when arrive on page.
+     b. Log out clearly displayed in navigation once signed in. 
+     
+   v. *As a user I want to be able to search for particular movie reviews*
+   
+     a. Search bar clearly displayed on reviews page immediately after logging in. 
+
+![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/readme/search.jpg)
+
+ * #### Potential User Goals
+
+    i. *As a potential user I want to find social media links*
+    
+     a. Social media links clearly displayed in footer.
+     
+   ii. *As a potential user I want to be able to join the site easily as a member*
+   
+     a. Join Us button displayed on home page and can't be missed.
  
- * ##### Returning Customer Goals
+ * ##### Returning User Goals
  
-    i. *As a returning user I want to be able to contact easily again*
+    i. *As a returning user I want to be able to log in easily*
     
-     a. If user returns the option of Contact Us form is available.
-     b. No restriction on use of Contact Us form.
+     a. Log in immediately available in fixed navbar.
      
     ii. *As a returning user I want to be able navigate easily to section I would like*
     
      a. If returning, a user will most likely be looking for a specific section most likely.
-     b. All sections are easily seen in navigation bar at top of page.
+     b. All sections are easily seen in navigation bar at top of page as a logged in user.
 
 #### Further Testing
 
  * Testing was completed on desktop browsers Google Chrome, Safari and Microsoft Edge.
- * Testing was completed on numerous devices iPhone X, iPhone 12, iPad, Google Pixel, Laptop and Desktop.
- * All testing went well.  
+ * Testing was completed on numerous devices iPhone X, iPhone 12, iPad, Google Pixel, Laptop and Desktop(including larger screen).
+ * All testing went well apart from a couple of issues with parallax images on smaller devices. On inspect of the page all looked fine until tested in real life  
 
 #### Known Bugs
 
  * One bug is that the footer will only be at the bottom of the viewport and not the bottom of the page. 
  * For some reason the parallax images are not showing correctly on mobile. During inspection on the website this appeared fine, but not when viewing on actual mobile phone.
+ * There is minial site wobble and not sure how this can be addressed further.
 
 ## Deployment
 
@@ -272,19 +288,23 @@ To make a clone of this site, please follow these steps:
 
 #### Content
 
-All text and content on the page was written by myself apart from some JavaScript which I found on a fellow code institute's website called Dublin Unlocked. This was used for the on click function necessary with the map. 
+All text and content on the page was written by myself apart from some Python logic which I found on a fellow code institute's website called Travel Reviews. I also took the user authentication and CRUD functionality from the code institute lessons. 
 
 #### Media
 
-All images used on this page were taken from [unsplash.com](https://unsplash.com/).
+All images used on this page were taken from [unsplash.com](https://unsplash.com/). URL links taken from Google.
 
 #### Code
 
-Code for the navigation bar was taken from [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/).
+Code for the navigation bar and footer were taken from [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/).
 
-My Contact form was a putting together of code from [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) and [W3Schools](https://www.w3schools.com/). However it was written by myself. 
+Code for the forms and buttons was taken from [W3 Schools](https://www.w3schools.com/).
+
+Code for User Authentication and CRUD functionality taken from Code Institue lessons.
+
+All other code was written by myself with help from sites [Stack Overflow](https://stackoverflow.com/)
 
 
 ## Acknowledgments
 
-Acknowledgment has to be made to Shane Keran who is on the same course as me. His site was an inspiration to me for my project and I used his click button code to make my site work. Very appreciative. Another acknoledgments are my mentor Adegbenga Adeye and Jim Morel who I met through Slack. 
+Acknowledgment has to be made to Gille Matea who is on the same course as me. Her site was an inspiration to me for my project and I used her python logic code to help make my site work. Very appreciative. Another acknoledgments are my mentor Adegbenga Adeye. Jim Morel, Brian XS and Sean Young who I met through Slack helped with various other issues. 
