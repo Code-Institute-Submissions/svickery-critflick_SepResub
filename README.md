@@ -144,7 +144,11 @@ In the footer is copyright information and links to the social media sites.
 * [Rotten Tomatoes](https://www.rottentomatoes.com/) - Used to have reviews added to site.
 * [W3 Validator](https://validator.w3.org/#validate_by_input) - Used to ensure HTML is correct.
 * [JS Lint](https://jslint.com/) - Used to ensure JavaScript is correct.
-
+* [Python](https://www.python.org/) - Language used to present data.
+* [MongoDB](https://www.mongodb.com/) - Database used for site data schema.
+* [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Templating language used with Python and Flask.
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/) - Web framework used with Python.
+* [Heroku](https://id.heroku.com/login) - Cloud based app for deploying websites.
 ## Testing
 
 To test the website, the project code was run through both a Markup checker, a CSS checker and a JavaScript checker, below are the screenshots of the results and explanations. 
