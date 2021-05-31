@@ -9,7 +9,9 @@
             <h1>Welcome to Reviews</h1>
             <p>See Below For The Latest Reviews</p>
             <p>Become A Contributor By Clicking Below</p>
-            <button class="join-btn btn btn-outline-success">Join Now!</button>
+            <form method="get" action="{{ url_for('sign_up') }}">
+                <button class="join-btn btn" type="submit">Join Now!</button>
+            </form>
         </div>
     </div>
     <br>
@@ -28,7 +30,7 @@
     </div>
 
     <!--Reviews Section-->
-    
+
     {% for movie_review in reviews %}
     <div class="container-fluid">
         <div class="card col-sm-12">
