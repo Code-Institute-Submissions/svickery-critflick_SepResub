@@ -13,35 +13,37 @@ body    {
     font-family: "Montserrat", sans-serif;
     background-color: #333333;
     background-repeat: no-repeat;
-    padding-top: 40px;
+    padding-top: 60px;
+    overflow-x: hidden;
 }
 
 .navbar {
-    background-color: #333333;
+    background-color: #333333 !important;
     width: 100%
 }
 
-.navbar-toggler-icon    {
-    color: #f8f8ff;
+.custom-toggler.navbar-toggler-icon  {
+    border-color: #f9bc50 !important;
 }
 
 .navbar-brand   {
+    color: #f9bc50 !important;
+    padding-left: 5px !important;
+}
+
+nav ul a {
+    color: #f9bc50 !important;
+}
+
+h4  {
+    text-align: center;
     color: #f9bc50;
 }
 
-nav li a {
+.about   {
+    text-align: center;
     color: #f9bc50;
-}
-
-nav li a:hover {
-    text-decoration: none;
-    color: white;
-}
-
-.h1-current  {
-    text-align: left;
-    color: #f9bc50;
-}
+}  
 
 /* Parallax styling on index and reviews pages */
 
@@ -123,7 +125,9 @@ hr {
 .cancel-btn,
 .delete-btn,
 .edit-btn,
-.delete-btn  {
+.delete-btn,
+.reset-btn,
+.join-btn {
     border: none;
     outline: 0;
     display: inline-block;
@@ -140,7 +144,8 @@ hr {
 }
 
 .register-btn,
-.already-btn  {
+.already-btn,
+.login-btn   {
     background-color: #f9bc50;
     color: black;
     padding: 16px 20px;
@@ -181,16 +186,6 @@ a   {
 
 b   {
     color: #f9bc50;
-}
-
-/*.edit  {
-    background-color: #f8f8ff;
-    border: none;
-    outline: 0;
-    display: inline-block;
-    color: black;
-    text-align: center;
-    cursor: pointer;
 }
 
 /* Footer styling */
@@ -254,4 +249,58 @@ textarea[type=text]:focus  {
 
 .card {
     background-color: #f9bc50;
+}
+
+/**** Media queries ****/
+
+/* Large devices  */
+@media (min-width: 992px) {
+    .parallax   {
+        min-height: 800px;
+    }
+
+    .card   {
+        width: auto;
+        
+    }
+
+    .card-img-top   {
+       min-height: 800px;
+    }
+}
+
+@media (max-width: 991px) and  (min-width:768px)    {
+    .parallax   {
+        min-height: 991px;
+    }
+}
+
+
+/* Small devices */
+
+@media (max-width: 767px) and (min-width: 576px)    {
+    .parallax   {
+        min-height: 767px;
+    }
+    .hero-text {
+        font-size: small;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 575px) {
+    .parallax   {
+        min-height: 650px;
+    }
+    body {
+        font-size: 15px;
+    }
+
+    .hero-text  {
+        font-size: 15px;
+    }
+
+    .card-img-top   {
+        max-height: 200px;
+    }
 }

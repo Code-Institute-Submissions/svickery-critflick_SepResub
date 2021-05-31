@@ -1,43 +1,48 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="user">
-            <h1 class="form-style">
-                {{ username }}'s Profile!
+        <div class="col-sm-12">
+            <div class="user">
+                <h1 class="form-style">
+                    {{ username }}'s Profile!
+                </h1>
                 <br>
                 <form class="form-style" method="get" action="{{ url_for('add_review') }}">
                     <button class="review-btn btn" type="submit">Add Review</button>
                 </form>
-            </h1>
+                <br>
+            </div>
         </div>
         <h4 class="h1-current">Previous Reviews</h4>
+        <br>
 
         {% for movie_review in reviews %}
         {% if session.user|lower == movie_review.created_by|lower %}
-        <div class="card prof-card">
+        <br>
+        <div class="card prof-card col-sm-12">
             <img class="card-img-top prof-img" src="{{ movie_review.image }}" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">{{ movie_review.title }} Review</h5>
                 <p class="card-text">
-                    <div class="row">
-                        <div class="info-text col-sm-6">
-                            <p>Director: {{ movie_review.director }}</p>
-                            <p>Actors: {{ movie_review.actors }}</p>
-                            <p>Rating: {{ movie_review.rating }}</p>
-                        </div>
-                        <div class="info-text col-sm-6">
-                            <p>Year of Release: {{ movie_review.year }}</p>
-                            <p>Language: {{ movie_review.language }}</p>
-                            <p>Run Time: {{ movie_review.run_time }}</p>
-                        </div>
+                <div class="row">
+                    <div class="info-text col-sm-6">
+                        <p>Director: {{ movie_review.director }}</p>
+                        <p>Actors: {{ movie_review.actors }}</p>
+                        <p>Rating: {{ movie_review.rating }}</p>
                     </div>
-                    <h5>Review:</h5>
-                    <div class="scroll-box scroll-box-prof">
-                        <p>{{ movie_review.review}}</p>
-                        <p class="card-text"><small class="text-muted">Review By: {{ movie_review.reviewed_by }}</small>
-                        </p>
+                    <div class="info-text col-sm-6">
+                        <p>Year of Release: {{ movie_review.year }}</p>
+                        <p>Language: {{ movie_review.language }}</p>
+                        <p>Run Time: {{ movie_review.run_time }}</p>
                     </div>
+                </div>
+                <h5>Review:</h5>
+                <div class="scroll-box scroll-box-prof">
+                    <p>{{ movie_review.review}}</p>
+                    <p class="card-text"><small class="text-muted">Review By: {{ movie_review.reviewed_by }}</small>
+                    </p>
+                </div>
             </div>
         </div>
         <br>
@@ -62,5 +67,6 @@
 
         {% endfor %}
     </div>
+</div>
 </div>
 {% endblock %}

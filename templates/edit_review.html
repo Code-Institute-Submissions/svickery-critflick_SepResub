@@ -10,80 +10,79 @@
             <p class="form-style">Edit your existing review</p>
             <hr>
 
-        <div class="row">
-            <div class="input-field col-sm-12 col-md-6">
-                <input type="text" name="title" id="title" 
-                minlength="1" value="{{ movie_review.title }}" required>
-            </div>
+            <div class="row">
+                <div class="input-field col-sm-12 col-md-6">
+                    <input type="text" name="title" id="title" minlength="1" value="{{ movie_review.title }}" required>
+                </div>
 
-            <div class="input-field col-sm-12 col-md-6">
-                <input type="text" value="{{ movie_review.year }}" name="year" id="year" 
-                minlength="1" required>
+                <div class="input-field col-sm-12 col-md-6">
+                    <input type="text" value="{{ movie_review.year }}" name="year" id="year" minlength="1" required>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="input-field col-sm-12 col-md-6">
-                
-                <input type="text" name="language" id="language" 
-                minlength="1" value="{{ movie_review.language }}" required>
-            </div>
+            <hr>
+            <div class="row">
+                <div class="input-field col-sm-12 col-md-6">
 
-            <div class="input-field col-sm-12 col-md-6">
-                
-                <input type="text" name="genre" id="genre" 
-                minlength="1" value="{{ movie_review.genre }}" required>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="input-field col-sm-12 col-md-6">
-                
-                <input type="text" name="director" id="director" 
-                minlength="1" value="{{ movie_review.director }}" required>
-            </div>
+                    <input type="text" name="language" id="language" minlength="1" value="{{ movie_review.language }}"
+                        required>
+                </div>
 
-            <div class="input-field col-sm-12 col-md-6">
-                
-                <input type="text" name="actors" id="actors" 
-                minlength="1" value="{{ movie_review.actors }}" required>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="input-field col-sm-12 col-md-6">
-                
-                <input type="text" name="rating" id="rating" 
-                minlength="1" value="{{ movie_review.rating }}" required>
-            </div>
+                <div class="input-field col-sm-12 col-md-6">
 
-            <div class="input-field col-sm-12 col-md-6">
-                
-                <input type="text" name="run_time" id="run_time" 
-                minlength="1" value="{{ movie_review.run_time }}" required>
+                    <input type="text" name="genre" id="genre" minlength="1" value="{{ movie_review.genre }}" required>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="input-field col-sm-12">
-                <label for="image"><b>Please add a valid link to an image for the movie</b></label>
-                <input type="text" name="image" id="image" 
-                minlength="1" minlength="5" maxlength="150" value="{{ movie_review.image }}" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\%$&'\(\)\*\+,;=.]+$" required>
+            <hr>
+            <div class="row">
+                <div class="input-field col-sm-12 col-md-6">
+
+                    <input type="text" name="director" id="director" minlength="1" value="{{ movie_review.director }}"
+                        required>
+                </div>
+
+                <div class="input-field col-sm-12 col-md-6">
+
+                    <input type="text" name="actors" id="actors" minlength="1" value="{{ movie_review.actors }}"
+                        required>
+                </div>
             </div>
-        </div>
-        <hr>
-         <div class="row review-text">
-            <div class="textarea col-sm-12">
-                <label for="review"><b>Please write your review below</b></label>
-                <textarea class="review-text" type="text"  name="review" id="review" 
-                minlength="1" rows="6" cols="121" required>{{ movie_review.review }}</textarea>
+            <hr>
+            <div class="row">
+                <div class="input-field col-sm-12 col-md-6">
+
+                    <input type="text" name="rating" id="rating" minlength="1" value="{{ movie_review.rating }}"
+                        required>
+                </div>
+
+                <div class="input-field col-sm-12 col-md-6">
+
+                    <input type="text" name="run_time" id="run_time" minlength="1" value="{{ movie_review.run_time }}"
+                        required>
+                </div>
             </div>
-        </div>
-        <hr>
+            <hr>
+            <div class="row">
+                <div class="input-field col-sm-12">
+                    <label for="image"><b>Please add a valid link to an image for the movie</b></label>
+                    <input type="text" name="image" id="image" minlength="1" minlength="5" maxlength="150"
+                        value="{{ movie_review.image }}"
+                        pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\%$&'\(\)\*\+,;=.]+$"
+                        required>
+                </div>
+            </div>
+            <hr>
+            <div class="row review-text">
+                <div class="textarea col-sm-12">
+                    <label for="review"><b>Please write your review below</b></label>
+                    <textarea class="review-text" type="text" name="review" id="review" minlength="1" rows="6"
+                        cols="121" required>{{ movie_review.review }}</textarea>
+                </div>
+            </div>
+            <hr>
             <button type="submit" class="registerbtn">Update Review</button>
             <button type="submit" class="cancel-btn"><a href="{{ url_for('index') }}">Cancel Edit</a></button>
         </div>
-     
+
     </form>
 </div>
 

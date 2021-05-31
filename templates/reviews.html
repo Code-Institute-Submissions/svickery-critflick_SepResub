@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-
+<div class="container-fluid">
     <div class="container-fluid parallax parallax2">
         <div class="hero-text">
             <h1>Welcome to Reviews</h1>
@@ -11,43 +11,45 @@
     </div>
     <br>
 
-        <div class="container">
-            <form class="form-style" action="{{ url_for('search') }}" method="POST">
-                <input class="form-control me-2" type="text" minlength="3" placeholder="Search For Reviews.."
-                    aria-label="Search" id="query" name="query">
-                <button class="search-btn btn form-style" type="submit"><a href="{{ url_for('reviews') }}">Search</a></button>
-                <button class="reset-btn btn form-style" type="text"><a href="{{ url_for('reviews') }}">Reset</a></button>
-            </form>
-            <br>
-        </div>
+    <div class="container-fluid">
+        <form class="form-style" action="{{ url_for('search') }}" method="POST">
+            <input class="form-control me-2" type="text" minlength="3" placeholder="Search For Reviews.."
+                aria-label="Search" id="query" name="query">
+            <button class="search-btn btn form-style" type="submit"><a
+                    href="{{ url_for('reviews') }}">Search</a></button>
+            <button class="reset-btn btn form-style" type="text"><a href="{{ url_for('reviews') }}">Reset</a></button>
+        </form>
+        <br>
+    </div>
     <!--Reviews Section-->
     {% for movie_review in reviews %}
-    <div class="container">
-        <div class="card">
+    <div class="container-fluid">
+        <div class="card col-sm-12">
             <img class="card-img-top" src="{{ movie_review.image }}" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">{{ movie_review.title }} Review</h5>
                 <p class="card-text">
-                    <div class="row">
+                <div class="row">
                     <div class="info-text col-sm-6">
-                    <p>Director: {{ movie_review.director }}</p> 
-                    <p>Actors: {{ movie_review.actors }}</p>
-                    <p>Rating: {{ movie_review.rating }}</p>
+                        <p>Director: {{ movie_review.director }}</p>
+                        <p>Actors: {{ movie_review.actors }}</p>
+                        <p>Rating: {{ movie_review.rating }}</p>
                     </div>
                     <div class="info-text col-sm-6">
-                    <p>Year of Release: {{ movie_review.year }}</p> 
-                    <p>Language: {{ movie_review.language }}</p>
-                    <p>Run Time: {{ movie_review.run_time }}</p>
+                        <p>Year of Release: {{ movie_review.year }}</p>
+                        <p>Language: {{ movie_review.language }}</p>
+                        <p>Run Time: {{ movie_review.run_time }} Mins</p>
                     </div>
-                    </div>
-                    <h5>Review:</h5>
-                    <div class="scroll-box">
+                </div>
+                <h5>Review:</h5>
+                <div class="scroll-box">
                     <p>{{ movie_review.review}}</p>
                     <p class="card-text"><small class="text-muted">Review By: {{ movie_review.created_by }}</small></p>
-                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <br>
     {% endfor %}
-
+</div>
 {% endblock %}

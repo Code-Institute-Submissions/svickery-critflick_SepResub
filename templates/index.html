@@ -1,30 +1,75 @@
 {% extends "base.html" %}
 {% block content %}
 
-
+<div class="container-fluid">
     <!--Home Page-->
     <div class="container-fluid parallax parallax1">
         <div class="hero-text">
             <h1>Welcome to CritFlick</h1>
-                <p>Your New Home For Movie Reviews!</p>
-                <p>Become A Contributor By Clicking Below</p>
-                <form method="get" action="{{ url_for('sign_up') }}">
-                    <button class="join-btn btn" type="submit">Join Now!</button>
-                </form>
+            <p>Your New Home For Movie Reviews!</p>
+            <p>Become A Contributor By Clicking Below</p>
+            <form method="get" action="{{ url_for('sign_up') }}">
+                <button class="join-btn btn" type="submit">Join Now!</button>
+            </form>
         </div>
     </div>
     <br>
 
-    <h4 class="h1-current">Currently Showing...</h4>
     <br>
 
     <!--Currently Showing Page-->
-    <div class="container-fluid">
-        <div class="current">
-        <div class="row col-sm-12">
-        
-        </div>
+    <div class="container-fluid" id="about-section">
+        <div class="container">
+            <div class="row about">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                    <h2 class="about-title">What is CritFlick?</h2>
+                    <br />
+                    <p>
+                        CritFlick is your one stop shop for all your needs in movie reviews.
+                        Except here, we don't let the so call professionals give the reviews. We leave that to you!
+                    </p>
+                    <p>
+                        For many years we have seen great movies get called all sorts in the press for not being Oscar
+                        worthy.
+                        At CritFlick we let the people decide and not the lords of Hollywood.
+                    </p>
+                    <p>
+                        We want all of you to join us in writing your reviews and letting
+                        the people know what really is good movie making! Feel free to browse the many
+                        reviews we already have in our reviews section.
+                    </p>
+                    <p>
+                        We are constantly adding new features, so keep checking back in! We hope to have a coming soon
+                        and currently
+                        showing section. We also will add a comments box on your reviews so members can interact with
+                        one another.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                    <h2 class="about-title">How To Get Involved?</h2>
+                    <br />
+                    <p>
+                        The first thing you need to do is join us at CritFLick. Just press the join now button above
+                        and create a profile using only a username and password!
+                    </p>
+                    <p>
+                        Once you have joined you can then add your only reviews! It's that simple. Click the add review
+                        button
+                        and you're on your way to being the next Roger Ebert. All we ask is that you provide a valid url
+                        link photo.
+                        It will look magnificient above your review!
+                    </p>
+                    <p>
+                        Here at CritFlick we are ever evolving but really we want to know about all movies. The reviews
+                        don't have to
+                        be the latest releases. It can be all your old favourites and classics. Have you seen Pulp
+                        Fiction 15 times? Let
+                        us know and tell us the intricacies of a tale already seen by many. Your point of view might
+                        change the movie industry!
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    
+</div>
 {% endblock %}
