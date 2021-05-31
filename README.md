@@ -260,6 +260,39 @@ The JS validator shows up some issues with certain characters being used, such a
 
 ## Deployment
 
+### Heroku Deployment
+
+This site is hosted on cloud based web app Heroku. The link is posted at the top of this page. 
+
+To deploy to Heroku, you need to follow these steps:
+
+1. Create an account with Heroku
+2. Select the Amazon AWS
+3. Create a new app and select the closest region to yourself.
+
+Next in the local repository type in the command line:
+
+4. pip3 freeze == local > requirements.txt
+
+Next make a Procfile in local repo command line:
+
+5. echo web: python3 run.py > Procfile - Note that you can use app.py instead of run.py. 
+
+6. Then in deploy menu option on Heroku site, deploy to Github repository. Do this by clicking connect and typing in your git repo name. Wait a few minutes.
+7. Make sure all files are committed in Gitpod and then go to the settings option in Heroku
+8. One in settings open Reveal Config Vars
+9. In Reveal Config Vars you need to give the following Key/Value statements:
+
+IP : 0.0.0.0
+PORT : 5000
+MONGO_URI : mongodb+srv://<username>:<password>@cluster0.yg2jd.mongodb.net/YOURDATABASENAME?retryWrites=true&w=majority (this is found in MongoDB)
+SECRET_KEY : YOURSECRETKEY
+MONGO_DBNAME : YOURDATABASENAME
+    
+Once this is completed, look to the right hand corner and click Open App. Your deployed site should appear. 
+
+### GitHub Deployment
+    
 This site is hosted by GitHub pages and deployed directly from the master branch. The site updates automatically from updates that are new commits from the master branch. For the site to deploy on GitHub pages the landing page must be correctly named 'index.html'.
 
 I deployed the site by following the next steps:
@@ -289,6 +322,8 @@ To make a clone of this site, please follow these steps:
 #### Content
 
 All text and content on the page was written by myself apart from some Python logic which I found on a fellow code institute's website called Travel Reviews. I also took the user authentication and CRUD functionality from the code institute lessons. 
+
+My Terms and Conditions were taken from [LawDepot](https://www.lawdepot.com/) and changed to suit the sites needs.
 
 #### Media
 
