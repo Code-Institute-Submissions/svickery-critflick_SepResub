@@ -170,7 +170,7 @@ The errors that have shown up are ones that can't be avoided. The errors are eit
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/ "CSS Validator") 
 
-![alt text](https://github.com/svickery/critflick/blob/a34fd119aa083fdadd7bcf025550fc65077fbb73/testing/css-validator.jpg "CSS Validator")
+![alt text](https://github.com/svickery/critflick/blob/2796c3f2706650385ec1dc2cf1d364602bac0874/testing/css-validator.jpg "CSS Validator")
 
 The errors shown here are from a getbootstrap styling I used which the validator does not recognise.
 
