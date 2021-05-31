@@ -243,6 +243,7 @@ textarea[type=text]:focus  {
 
 .card-title {
     text-align: center;
+    color: black;
 }
 
 .scroll-box {
