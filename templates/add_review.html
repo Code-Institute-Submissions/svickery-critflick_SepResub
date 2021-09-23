@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %} 
 {% block content %}
 <!--Add Review Form-->
 
@@ -29,7 +29,28 @@
 
                     <div class="input-field col-sm-12 col-md-6">
 
-                        <input type="text" placeholder="Genre.." name="genre" id="genre" minlength="1" required>
+                        <select type="text" placeholder="Genre.." name="genre" id="genre" minlength="1" required>
+                            <option value="" disabled selected hidden>Genre..</option>
+                            <option value="action">Action</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="romance">Romance</option>
+                            <option value="horror">Horror</option>
+                            <option value="drama">Drama</option>
+                            <option value="sci-fi">Sci-Fi</option>
+                            <option value="thriller">Thriller</option>
+                            <option value="western">Western</option>
+                            <option value="documentary">Documentary</option>
+                            <option value="musical">Musical</option>
+                            <option value="animation">Animation</option>
+                            <option value="rom-com">Rom-Com</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="mystery">Mystery</option>
+                            <option value="martial-arts">Martial Arts</option>
+                            <option value="sports">Sports</option>
+                            <option value="indie">Indie</option>
+                            <option value="short">Short</option>
+                        </select>
                     </div>
                 </div>
                 <hr>
