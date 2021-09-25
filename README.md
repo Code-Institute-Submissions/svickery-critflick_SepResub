@@ -89,7 +89,7 @@ The Home page features one large photography covering the top of the page. This 
 
 #### Reviews
 
-The reviews page has a similar layout to the home page with a large image at the top and hero text allowing the user to join as a member easily. Below this image there are then cards which have large eye catching images and beneath those images, there is all the information you would need about a movie. Below that further is the review of the movie. This review section has a scrolling effect so that the user doesn't have to navigate elsewhere to read it in its full form. At the bottom of the review is the contributors name.  
+The reviews page has a similar layout to the home page with a large image at the top and hero text allowing the user to join as a member easily. Below this image there are then cards which have large eye catching images and beneath those images, there is all the information you would need about a movie. Below that further is the review of the movie. This review section has a scrolling effect so that the user doesn't have to navigate elsewhere to read it in its full form. At the bottom of the review is the contributors name.   
 
 #### Sign Up
 
@@ -105,11 +105,11 @@ Once a user has logged in, they will be redirected immediately to their own prof
 
 #### Add Review
 
-Located in the navigation bar as well as being able to from the previously mentioned add review button on the profile page. Users can add a review whenever the choose and will be given a simple form to follow. This includes a url link for the user to add for the review. Once the information is complete and the review is written, there is a submit button to add this to the site. This review will be visible to all people navigating to the site. 
+Located in the navigation bar as well as being able to from the previously mentioned add review button on the profile page. Users can add a review whenever the choose and will be given a simple form to follow. This includes a url link for the user to add for the review. Once the information is complete and the review is written, there is a submit button to add this to the site. This review will be visible to all people navigating to the site. Dropdown menu's have been added to the genre and rating fields, to make it easier for the user.
 
 #### Edit Review
 
-This is not available in the navigation but links directly from the edit button. This page will render all the previous information supplied in the review. 
+This is not available in the navigation but links directly from the edit button. This page will render all the previous information supplied in the review. Dropdown menu's have been added to the genre and rating fields, to make it easier for the user. 
 
 #### Log Out
 
@@ -149,14 +149,14 @@ In the footer is copyright information and links to the social media sites.
 * [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Templating language used with Python and Flask.
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/) - Web framework used with Python.
 * [Heroku](https://id.heroku.com/login) - Cloud based app for deploying websites.
+* [QuickDatabaseDiagrams](https://app.quickdatabasediagrams.com/) - Website to create data schema relationships.
 
 ## Database Schema
 
-As you can see in the below pictures, I had two clusters from movie_datbase, called reviews and users. Reviews is purely for the information given by a contributer to the site for their review. Users data is their login name and password (not visible).
+As you can see in the below picture, I had two clusters from movie_datbase, called reviews and users. Reviews is purely for the information given by a contributer to the site for their review. Users data is their login name and password (not visible). The relationship is shown between the user and the created_by list items.
 
-![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/dbreviews.jpg)
+![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/dbrelation.jpg)
 
-![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/dbusers.jpg)
 
 ## Testing
 
