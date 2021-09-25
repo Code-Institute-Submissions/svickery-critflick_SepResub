@@ -185,7 +185,7 @@ def delete_review(movie_review_id):
 @app.errorhandler(500)
 def page_not_found(e):
     # note that we set the 500 status explicitly
-    return render_template('500.html'), 404
+    return render_template('500.html'), 500
 
 
 if __name__ == "__main__":
