@@ -41,7 +41,9 @@
                 <div class="row">
                     <div class="info-text col-sm-6">
                         <p>Director: {{ movie_review.director }}</p>
-                        <p>Actors: {{ movie_review.actors }}</p>
+                    {% for actor in movie_review.actors %}
+                        <p>{{ actor }}</p>
+                    {% endfor %}
                         <p>Rating: {{ movie_review.rating }}</p>
                     </div>
                     <div class="info-text col-sm-6">
