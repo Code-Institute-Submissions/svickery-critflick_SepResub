@@ -155,7 +155,7 @@ In the footer is copyright information and links to the social media sites.
 
 As you can see in the below picture, I had two clusters from movie_datbase, called reviews and users. Reviews is purely for the information given by a contributer to the site for their review. Users data is their login name and password (not visible). The relationship is shown between the user and the created_by list items.
 
-![alt text](https://github.com/svickery/critflick/blob/3f416c98eeb2c1292bb905ac7c84acfa2394382e/testing/dbrelation.jpg)
+![alt text](https://github.com/svickery/critflick/blob/5650eb23c8be6a4c91edeee90301686dcd614112/testing/dbrelation.jpg)
 
 
 ## Testing
