@@ -182,10 +182,9 @@ def delete_review(movie_review_id):
     return redirect(url_for("reviews"))
 
 
-@app.errorhandler(500)
-def page_not_found(e):
-    # note that we set the 500 status explicitly
-    return render_template('500.html'), 500
+@app.errorhandler(DatabaseError)
+def special_exception_handler(error):
+    return 'Database connection failed', 500
 
 
 if __name__ == "__main__":
