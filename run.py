@@ -40,7 +40,7 @@ def terms():
 @app.route("/search", methods=["GET", "POST"])
 def search():
     """
-        Search reviews by the title and country name
+        Search reviews by the title and 
     """
     query = request.form.get("query")
     reviews = list(mongo.db.reviews.find({"$text": {"$search": query}}))
