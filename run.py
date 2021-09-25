@@ -182,7 +182,7 @@ def delete_review(movie_review_id):
     return redirect(url_for("reviews"))
 
 
-@app.errorhandler(DatabaseError)
+@app.errorhandler(500)
 def special_exception_handler(error):
     return 'Database connection failed', 500
 
